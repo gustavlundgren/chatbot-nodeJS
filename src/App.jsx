@@ -32,11 +32,14 @@ function App() {
         </h1>
       </section>
 
-      <section></section>
+      <section className='absolute bg-[#f2c4ce] w-20 h-8 rounded-md'>
+        <h2>Content</h2>
+        <p>10:32</p>
+      </section>
 
-      <section className='absolute left-2/4 bottom-20 w-11/12 h-8 flex '>
+      <section className='absolute justify-center items-center bottom-20 w-11/12 h-8 flex '>
         <input
-          className='bg-[#d6d6d6 rounded-l-md w-10/12 h-full max-w-xl'
+          className='bg-[#d6d6d6 rounded-l-md grow h-full max-w-xl'
           type='text'
           autoComplete='off'
           placeholder='Send your message'
@@ -46,9 +49,9 @@ function App() {
         />
         <button
           onClick={() => sendMessage()}
-          className='bg-[#f58f7c] text-[#d6d6d6] w-2/12 h-full flex justify-center items-center rounded-r-md text-xl'
+          className='bg-[#f58f7c] text-[#d6d6d6] w-24 h-full flex justify-center items-center rounded-r-md text-xl'
         >
-          <FiSend />
+          <FiSend className='hover:scale-110' />
         </button>
       </section>
     </main>
